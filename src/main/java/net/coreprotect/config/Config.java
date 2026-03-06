@@ -49,7 +49,6 @@ public class Config extends Language {
     public boolean EXCLUDE_TNT;
     public boolean NETWORK_DEBUG;
     public boolean MYSQL;
-    public boolean CHECK_UPDATES;
     public boolean API_ENABLED;
     public boolean VERBOSE;
     public boolean ROLLBACK_ITEMS;
@@ -93,7 +92,6 @@ public class Config extends Language {
     public int MAX_RADIUS;
 
     static {
-        DEFAULT_VALUES.put("donation-key", "");
         DEFAULT_VALUES.put("use-mysql", "false");
         DEFAULT_VALUES.put("table-prefix", "co_");
         DEFAULT_VALUES.put("mysql-host", "127.0.0.1");
@@ -102,7 +100,6 @@ public class Config extends Language {
         DEFAULT_VALUES.put("mysql-username", "root");
         DEFAULT_VALUES.put("mysql-password", "");
         DEFAULT_VALUES.put("language", "en");
-        DEFAULT_VALUES.put("check-updates", "true");
         DEFAULT_VALUES.put("api-enabled", "true");
         DEFAULT_VALUES.put("verbose", "true");
         DEFAULT_VALUES.put("default-radius", "10");
@@ -142,10 +139,8 @@ public class Config extends Language {
         DEFAULT_VALUES.put("username-changes", "true");
         DEFAULT_VALUES.put("worldedit", "true");
 
-        HEADERS.put("donation-key", new String[] { "# CoreProtect is donationware. Obtain a donation key from coreprotect.net/donate/" });
         HEADERS.put("use-mysql", new String[] { "# MySQL is optional and not required.", "# If you prefer to use MySQL, enable the following and fill out the fields." });
         HEADERS.put("language", new String[] { "# If modified, will automatically attempt to translate languages phrases.", "# List of language codes: https://coreprotect.net/languages/" });
-        HEADERS.put("check-updates", new String[] { "# If enabled, CoreProtect will check for updates when your server starts up.", "# If an update is available, you'll be notified via your server console.", });
         HEADERS.put("api-enabled", new String[] { "# If enabled, other plugins will be able to utilize the CoreProtect API.", });
         HEADERS.put("verbose", new String[] { "# If enabled, extra data is displayed during rollbacks and restores.", "# Can be manually triggered by adding \"#verbose\" to your rollback command." });
         HEADERS.put("default-radius", new String[] { "# If no radius is specified in a rollback or restore, this value will be", "# used as the radius. Set to \"0\" to disable automatically adding a radius." });
@@ -197,7 +192,6 @@ public class Config extends Language {
         this.NETWORK_DEBUG = this.getBoolean("network-debug", false);
         this.UNKNOWN_LOGGING = this.getBoolean("unknown-logging", false);
         this.MAXIMUM_POOL_SIZE = this.getInt("maximum-pool-size", 10);
-        this.DONATION_KEY = this.getString("donation-key");
         this.MYSQL = this.getBoolean("use-mysql");
         this.PREFIX = this.getString("table-prefix");
         this.MYSQL_HOST = this.getString("mysql-host");
@@ -206,7 +200,6 @@ public class Config extends Language {
         this.MYSQL_USERNAME = this.getString("mysql-username");
         this.MYSQL_PASSWORD = this.getString("mysql-password");
         this.LANGUAGE = this.getString("language");
-        this.CHECK_UPDATES = this.getBoolean("check-updates");
         this.API_ENABLED = this.getBoolean("api-enabled");
         this.VERBOSE = this.getBoolean("verbose");
         this.DEFAULT_RADIUS = this.getInt("default-radius");

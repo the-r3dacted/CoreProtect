@@ -9,7 +9,6 @@ import org.bukkit.plugin.Plugin;
 import net.coreprotect.CoreProtect;
 import net.coreprotect.config.ConfigHandler;
 import net.coreprotect.language.Phrase;
-import net.coreprotect.thread.NetworkHandler;
 import net.coreprotect.worldedit.CoreProtectEditSessionEvent;
 
 public class VersionUtils {
@@ -63,8 +62,8 @@ public class VersionUtils {
         if (branch.startsWith("-edge")) {
             name = name + " " + branch.substring(1, 2).toUpperCase() + branch.substring(2, 5);
         }
-        else if (isCommunityEdition()) {
             name = name + " " + ConfigHandler.COMMUNITY_EDITION;
+        else {
         }
 
         return name;
@@ -103,16 +102,8 @@ public class VersionUtils {
         return true;
     }
 
-    public static boolean isCommunityEdition() {
-        return !isBranch("edge") && !isBranch("coreprotect") && !validDonationKey();
-    }
-
     public static boolean isBranch(String branch) {
         return ConfigHandler.EDITION_BRANCH.contains("-" + branch);
-    }
-
-    public static boolean validDonationKey() {
-        return NetworkHandler.donationKey() != null;
     }
 
     public static String getBranch() {

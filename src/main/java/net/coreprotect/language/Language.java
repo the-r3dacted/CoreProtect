@@ -55,7 +55,6 @@ public class Language {
         phrases.put(Phrase.DEVELOPMENT_BRANCH, "Development branch detected, skipping patch scripts.");
         phrases.put(Phrase.DIRT_BLOCK, "Placed a temporary safety block under you.");
         phrases.put(Phrase.DISABLE_SUCCESS, "Success! Disabled {0}");
-        phrases.put(Phrase.DONATION_KEY_REQUIRED, "A valid donation key is required for that command.");
         phrases.put(Phrase.ENABLE_FAILED, "{0} was unable to start.");
         phrases.put(Phrase.ENABLE_SUCCESS, "{0} has been successfully enabled!");
         phrases.put(Phrase.ENJOY_COREPROTECT, "Enjoy {0}? Join our Discord!");
@@ -120,7 +119,6 @@ public class Language {
         phrases.put(Phrase.INVALID_BRANCH_2, "To continue, set project branch to \"development\".");
         phrases.put(Phrase.INVALID_BRANCH_3, "Running development code may result in data corruption.");
         phrases.put(Phrase.INVALID_CONTAINER, "Please inspect a valid container first.");
-        phrases.put(Phrase.INVALID_DONATION_KEY, "Invalid donation key.");
         phrases.put(Phrase.INVALID_INCLUDE, "\"{0}\" is an invalid block/entity name.");
         phrases.put(Phrase.INVALID_INCLUDE_COMBO, "That is an invalid block/entity combination.");
         phrases.put(Phrase.INVALID_RADIUS, "Please enter a valid radius.");
@@ -212,7 +210,6 @@ public class Language {
         phrases.put(Phrase.STATUS_CONSUMER, "Consumer: {0} {item|items} in queue.");
         phrases.put(Phrase.STATUS_DATABASE, "Database: Using {0}.");
         phrases.put(Phrase.STATUS_INTEGRATION, "{0}: Integration {enabled|disabled}.");
-        phrases.put(Phrase.STATUS_LICENSE, "License: {0}");
         phrases.put(Phrase.STATUS_SYSTEM, "System: {0}");
         phrases.put(Phrase.STATUS_VERSION, "Version: {0}");
         phrases.put(Phrase.TELEPORTED, "Teleported to {0}.");
@@ -226,15 +223,11 @@ public class Language {
         phrases.put(Phrase.TIME_UNITS, "{/m|/h|/d}");
         phrases.put(Phrase.TIME_WEEKS, "{0} {week|weeks}");
         phrases.put(Phrase.TIME_YEARS, "{0} {year|years}");
-        phrases.put(Phrase.UPDATE_ERROR, "An error occurred while checking for updates.");
-        phrases.put(Phrase.UPDATE_HEADER, "{0} Update");
-        phrases.put(Phrase.UPDATE_NOTICE, "Notice: {0} is now available.");
         phrases.put(Phrase.UPGRADE_IN_PROGRESS, "Upgrade in progress. Please try again later.");
         phrases.put(Phrase.USER_NOT_FOUND, "User \"{0}\" not found.");
         phrases.put(Phrase.USER_OFFLINE, "The user \"{0}\" is not online.");
         phrases.put(Phrase.USING_MYSQL, "Using MySQL for data storage.");
         phrases.put(Phrase.USING_SQLITE, "Using SQLite for data storage.");
-        phrases.put(Phrase.VALID_DONATION_KEY, "Valid donation key.");
         phrases.put(Phrase.VERSION_NOTICE, "Version {0} is now available.");
         phrases.put(Phrase.VERSION_INCOMPATIBLE, "{0} {1} is not supported.");
         phrases.put(Phrase.VERSION_REQUIRED, "{0} {1} or higher is required.");

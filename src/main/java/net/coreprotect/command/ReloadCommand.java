@@ -5,7 +5,6 @@ import org.bukkit.command.CommandSender;
 import net.coreprotect.config.ConfigHandler;
 import net.coreprotect.consumer.Consumer;
 import net.coreprotect.language.Phrase;
-import net.coreprotect.thread.NetworkHandler;
 import net.coreprotect.utility.Chat;
 import net.coreprotect.utility.Color;
 
@@ -43,9 +42,6 @@ public class ReloadCommand {
 
                         ConfigHandler.performInitialization(false);
                         Chat.sendMessage(player, Color.DARK_AQUA + "CoreProtect " + Color.WHITE + "- " + Phrase.build(Phrase.RELOAD_SUCCESS));
-
-                        Thread networkHandler = new Thread(new NetworkHandler(false, false));
-                        networkHandler.start();
                     }
                     catch (Exception e) {
                         e.printStackTrace();

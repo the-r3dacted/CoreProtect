@@ -38,7 +38,6 @@ public enum Phrase {
     DEVELOPMENT_BRANCH,
     DIRT_BLOCK,
     DISABLE_SUCCESS,
-    DONATION_KEY_REQUIRED,
     ENABLE_FAILED,
     ENABLE_SUCCESS,
     ENJOY_COREPROTECT,
@@ -103,7 +102,6 @@ public enum Phrase {
     INVALID_BRANCH_2,
     INVALID_BRANCH_3,
     INVALID_CONTAINER,
-    INVALID_DONATION_KEY,
     INVALID_INCLUDE,
     INVALID_INCLUDE_COMBO,
     INVALID_RADIUS,
@@ -195,7 +193,6 @@ public enum Phrase {
     STATUS_CONSUMER,
     STATUS_DATABASE,
     STATUS_INTEGRATION,
-    STATUS_LICENSE,
     STATUS_SYSTEM,
     STATUS_VERSION,
     TELEPORTED,
@@ -209,21 +206,17 @@ public enum Phrase {
     TIME_UNITS,
     TIME_WEEKS,
     TIME_YEARS,
-    UPDATE_ERROR,
-    UPDATE_HEADER,
-    UPDATE_NOTICE,
     UPGRADE_IN_PROGRESS,
     USER_NOT_FOUND,
     USER_OFFLINE,
     USING_MYSQL,
     USING_SQLITE,
-    VALID_DONATION_KEY,
     VERSION_NOTICE,
     VERSION_INCOMPATIBLE,
     VERSION_REQUIRED,
     WORLD_NOT_FOUND;
 
-    final private static Set<Phrase> HEADERS = new HashSet<>(Arrays.asList(Phrase.CONTAINER_HEADER, Phrase.HELP_HEADER, Phrase.INTERACTIONS_HEADER, Phrase.LOOKUP_HEADER, Phrase.SIGN_HEADER, Phrase.UPDATE_HEADER));
+    final private static Set<Phrase> HEADERS = new HashSet<>(Arrays.asList(Phrase.CONTAINER_HEADER, Phrase.HELP_HEADER, Phrase.INTERACTIONS_HEADER, Phrase.LOOKUP_HEADER, Phrase.SIGN_HEADER));
     final private static Set<String> COLORS = new HashSet<>(Arrays.asList(Color.WHITE, Color.DARK_AQUA));
     final private static String SPLIT = ":";
     final private static String FULL_WIDTH_SPLIT = "：";
