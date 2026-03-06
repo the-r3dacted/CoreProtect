@@ -120,7 +120,7 @@ public class PluginInitializationService {
 
         Chat.console("--------------------");
         Chat.console(Phrase.build(Phrase.ENJOY_COREPROTECT, pluginDescription.getName()));
-        Chat.console(Phrase.build(Phrase.LINK_DISCORD, "www.coreprotect.net/discord/"));
+        Chat.console(Phrase.build(Phrase.LINK_DISCORD, "discord.gg/ecx"));
         Chat.console("--------------------");
     }
 

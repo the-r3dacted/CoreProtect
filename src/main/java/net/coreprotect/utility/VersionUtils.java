@@ -48,12 +48,12 @@ public class VersionUtils {
         CoreProtect instance = CoreProtect.getInstance();
         // Return default name if instance is null
         if (instance == null) {
-            return "CoreProtect";
+            return "r3dProtect";
         }
 
         // Return default name if description is null
         if (instance.getDescription() == null) {
-            return "CoreProtect";
+            return "r3dProtect";
         }
 
         String name = instance.getDescription().getName();
@@ -62,8 +62,8 @@ public class VersionUtils {
         if (branch.startsWith("-edge")) {
             name = name + " " + branch.substring(1, 2).toUpperCase() + branch.substring(2, 5);
         }
-            name = name + " " + ConfigHandler.COMMUNITY_EDITION;
         else {
+            return "r3dProtect";
         }
 
         return name;
